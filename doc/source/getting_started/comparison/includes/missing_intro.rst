@@ -1,6 +1,6 @@
-Both have a representation for missing data — pandas' is the special float value ``NaN`` (not a
-number).  Many of the semantics are the same; for example missing data propagates through numeric
-operations, and is ignored by default for aggregations.
+Both pandas and |program| have a representation for missing data — pandas' is the special float
+value ``NaN`` (not a number).  Many of the semantics are the same; for example missing data
+propagates through numeric operations, and is ignored by default for aggregations.
 
 .. ipython:: python
 

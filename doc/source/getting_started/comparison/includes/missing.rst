@@ -6,11 +6,10 @@ should be used for comparisons.
    outer_join[pd.isna(outer_join["value_x"])]
    outer_join[pd.notna(outer_join["value_x"])]
 
-pandas also provides a variety of methods to work with missing data -- some of
-which would be challenging to express in Stata. For example, there are methods to
-drop all rows with any missing values, replacing missing values with a specified
-value, like the mean, or forward filling from previous rows. See the
-:ref:`missing data documentation<missing_data>` for more.
+pandas also provides a variety of methods to work with missing data -- some of which would be
+challenging to express in |program|. For example, there are methods to drop all rows with any
+missing values, replacing missing values with a specified value, like the mean, or forward filling
+from previous rows. See the :ref:`missing data documentation<missing_data>` for more.
 
 .. ipython:: python
 

@@ -448,6 +448,8 @@ For example, in Stata you could do this to filter missing values.
 
 .. include:: includes/missing.rst
 
+.. |program| replace:: Stata
+
 
 GroupBy
 -------
