@@ -116,7 +116,7 @@ jobs:
     - name: Build documentation
       run: |
         source activate pandas-dev
-        doc/make.py --warnings-are-errors | tee sphinx.log ; exit ${PIPESTATUS[0]}
+        doc/make.py | tee sphinx.log ; exit ${PIPESTATUS[0]}
 
     - name: Save website as an artifact
       uses: actions/upload-artifact@v2
