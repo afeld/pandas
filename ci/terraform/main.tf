@@ -18,3 +18,7 @@ resource "azurerm_storage_account" "storeacc" {
     index_document = "index.html"
   }
 }
+
+output "container" {
+  value = azurerm_storage_account.storeacc.primary_web_host
+}
