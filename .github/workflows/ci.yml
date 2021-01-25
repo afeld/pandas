@@ -118,6 +118,17 @@ jobs:
         source activate pandas-dev
         doc/make.py --warnings-are-errors | tee sphinx.log ; exit ${PIPESTATUS[0]}
 
+    - name: Save website as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: website
+        path: web/build
+    - name: Save docs as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: docs
+        path: doc/build/html
+
     # This can be removed when the ipython directive fails when there are errors,
     # including the `tee sphinx.log` in te previous step (https://github.com/ipython/ipython/issues/11547)
     - name: Check ipython directive errors
