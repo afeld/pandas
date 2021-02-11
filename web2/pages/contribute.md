@@ -35,7 +35,7 @@ and about current sponsors in the [sponsors page](about/sponsors.html).
             to the documentation (including translators) and others. There are tasks for all
             levels, including beginners.
           </p>
-          <p>More information in the <a href="{{ base_url }}/docs/development/index.html">contributing page</a></p>
+          <p>More information in the <a href="/docs/development/index.html">contributing page</a></p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
