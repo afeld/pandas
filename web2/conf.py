@@ -152,7 +152,7 @@ NAVIGATION_LINKS = {
 NAVIGATION_ALT_LINKS = {DEFAULT_LANG: ()}
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "base-jinja"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -239,11 +239,12 @@ POSTS = (
     ("posts/*.html", blog_dest, "post.tmpl"),
 )
 pages_dest = ""
+pages_template = "page.tmpl"
 PAGES = (
-    ("pages/*.rst", pages_dest, "page.tmpl"),
-    ("pages/*.md", pages_dest, "page.tmpl"),
-    ("pages/*.txt", pages_dest, "page.tmpl"),
-    ("pages/*.html", pages_dest, "page.tmpl"),
+    ("pages/*.rst", pages_dest, pages_template),
+    ("pages/*.md", pages_dest, pages_template),
+    ("pages/*.txt", pages_dest, pages_template),
+    ("pages/*.html", pages_dest, pages_template),
 )
 
 
@@ -1330,7 +1331,8 @@ MARKDOWN_EXTENSIONS = [
 # Bundle JS and CSS into single files to make site loading faster in a HTTP/1.1
 # environment but is not recommended for HTTP/2.0 when caching is used.
 # Defaults to True.
-# USE_BUNDLES = True
+# disabled because custom CSS wasn't being loaded
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]

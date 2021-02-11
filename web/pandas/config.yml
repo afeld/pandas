@@ -18,8 +18,6 @@ main:
   - meta
 static:
   logo: /static/img/pandas_white.svg
-  css:
-  - /static/css/pandas.css
 navbar:
   - name: "About us"
     target:
