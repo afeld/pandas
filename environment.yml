@@ -50,6 +50,7 @@ dependencies:
   - nikola
   - pyyaml
   - requests
+  - ruamel.yaml
   - watchdog
 
   # testing
