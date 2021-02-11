@@ -42,6 +42,10 @@ MANIFEST
 ################
 # setup.py working directory
 build
+# web directories
+.doit.db.*
+web2/cache
+web2/output
 # sphinx build directory
 doc/_build
 # setup.py dist directory

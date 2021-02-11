@@ -47,8 +47,10 @@ dependencies:
   # web (jinja2 is also needed, but it's also an optional pandas dependency)
   - markdown
   - feedparser
+  - nikola
   - pyyaml
   - requests
+  - watchdog
 
   # testing
   - boto3
