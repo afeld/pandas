@@ -25,7 +25,7 @@ jobs:
       - name: Compile the Action
         run: |
           npm install
-          npm build
+          npm run build
         working-directory: .github/actions/slash-assign-action
 
       - name: Assign the user or unassign stale assignments
