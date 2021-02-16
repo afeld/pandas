@@ -1,0 +1,20 @@
+# https://github.com/JasonEtco/slash-assign-action#usage
+name: Slash assign
+
+on:
+  schedule:
+    - cron: 0 0 * * *
+  issue_comment:
+    types: [created]
+
+jobs:
+  slash_assign:
+    if: >
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/assign')) ||
+      github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign the user or unassign stale assignments
+        # not yet published
+        # https://github.com/JasonEtco/slash-assign-action/issues/1
+        uses: JasonEtco/slash-assign-action/@8424046
